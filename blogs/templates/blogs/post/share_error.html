@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Error Sharing Post
+{% endblock %}
+
+{% block content %}
+    <h1>Error Sharing Post</h1>
+    <p>There was an error while trying to share the post. Please try again later.</p>
+    <p>Error details: {{ error }}</p>
+    <a href="{% url 'post_list' %}">Back to posts</a>
+{% endblock %}
